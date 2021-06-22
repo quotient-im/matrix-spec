@@ -46,6 +46,7 @@ paths:
                 displayname:
                   type: string
                   description: The new display name for this user.
+              required: ["displayname"]
         description: The new display name information.
         required: true
       responses:
@@ -147,6 +148,7 @@ paths:
                   type: string
                   format: uri
                   description: The new avatar URL for this user.
+              required: ["avatar_url"]
         description: The new avatar information.
         required: true
       responses:
