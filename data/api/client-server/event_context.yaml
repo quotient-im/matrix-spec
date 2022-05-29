@@ -105,7 +105,7 @@ paths:
                     type: array
                     description: The state of the room at the last event returned.
                     items:
-                      $ref: definitions/client_event.yaml
+                      $ref: definitions/client_state_event.yaml
               examples:
                 response:
                   value: {
