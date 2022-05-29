@@ -154,7 +154,7 @@ paths:
                   has left the room then this will be the state of the room
                   when they left as a list of events.
                 items:
-                  $ref: definitions/client_event.yaml
+                  $ref: definitions/client_state_event.yaml
               examples:
                 response:
                   value: [
@@ -253,7 +253,7 @@ paths:
                   chunk:
                     type: array
                     items:
-                      $ref: definitions/client_event.yaml
+                      $ref: definitions/client_state_event.yaml
               examples:
                 response:
                   value: {
