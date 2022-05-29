@@ -272,7 +272,7 @@ paths:
                                 type: array
                                 title: Room State
                                 items:
-                                  $ref: definitions/client_event.yaml
+                                  $ref: definitions/client_state_event.yaml
                           groups:
                             type: object
                             title: Groups
