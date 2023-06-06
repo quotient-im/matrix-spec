@@ -50,6 +50,7 @@ paths:
                         get_login_token:
                           type: boolean
                           x-addedInMatrixVersion: "1.7"
+                          default: false
                           description: |-
                             If `type` is `m.login.token`, an optional field to indicate
                             to the unauthenticated client that the homeserver supports
