@@ -67,6 +67,7 @@ paths:
             application/json:
               schema:
                 type: object
+                maxProperties: 0
               examples:
                 response:
                   value: {}

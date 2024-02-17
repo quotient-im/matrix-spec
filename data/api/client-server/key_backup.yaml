@@ -302,6 +302,7 @@ paths:
             application/json:
               schema:
                 type: object
+                maxProperties: 0
               examples:
                 response:
                   value: {}
@@ -371,7 +372,7 @@ paths:
             application/json:
               schema:
                 type: object
-                properties: {}
+                maxProperties: 0
         "404":
           description: |-
             The backup specified does not exist. If the backup was previously

@@ -256,6 +256,7 @@ paths:
             application/json:
               schema:
                 type: object
+                maxProperties: 0
                 description: An empty object.
               examples:
                 response:

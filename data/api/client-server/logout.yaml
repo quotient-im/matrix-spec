@@ -34,7 +34,7 @@ paths:
             application/json:
               schema:
                 type: object
-                properties: {}
+                maxProperties: 0
       tags:
         - Session management
   /logout/all:
@@ -63,7 +63,7 @@ paths:
             application/json:
               schema:
                 type: object
-                properties: {}
+                maxProperties: 0
       tags:
         - Session management
 servers:
