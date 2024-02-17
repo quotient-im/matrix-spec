@@ -74,7 +74,7 @@ paths:
             application/json:
               schema:
                 type: object
-                properties: {}
+                maxProperties: 0 # empty json object
         "429":
           description: This request was rate-limited.
           content:
