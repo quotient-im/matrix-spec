@@ -123,7 +123,8 @@ paths:
           content:
             application/json:
               schema:
-                type: object  # empty json object
+                type: object
+                maxProperties: 0 # empty json object
               examples:
                 response:
                   value: {}
@@ -171,6 +172,7 @@ paths:
             application/json:
               schema:
                 type: object
+                maxProperties: 0
               examples:
                 response:
                   value: {}
@@ -226,6 +228,7 @@ paths:
             application/json:
               schema:
                 type: object
+                maxProperties: 0
               examples:
                 response:
                   value: {}
