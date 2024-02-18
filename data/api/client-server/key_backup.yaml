@@ -683,7 +683,6 @@ paths:
           content:
             application/json:
               schema:
-                type: object
                 $ref: definitions/room_key_backup.yaml
         "404":
           description: The backup was not found.
