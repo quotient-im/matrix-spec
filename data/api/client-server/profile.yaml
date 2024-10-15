@@ -75,6 +75,9 @@ paths:
         own displayname or to query the name of other users; either locally or
         on remote homeservers.
       operationId: getDisplayName
+      security:
+        - accessTokenQuery: []
+        - accessTokenBearer: []
       parameters:
         - in: path
           name: userId
@@ -178,6 +181,9 @@ paths:
         own avatar URL or to query the URL of other users; either locally or
         on remote homeservers.
       operationId: getAvatarUrl
+      security:
+        - accessTokenQuery: []
+        - accessTokenBearer: []
       parameters:
         - in: path
           name: userId
@@ -229,6 +235,9 @@ paths:
         to fetch the user's own profile information or other users; either
         locally or on remote homeservers.
       operationId: getUserProfile
+      security:
+        - accessTokenQuery: []
+        - accessTokenBearer: []
       parameters:
         - in: path
           name: userId
