@@ -58,6 +58,9 @@ paths:
                             endpoint. Note that supporting the endpoint does not
                             necessarily indicate that the user attempting to log in will
                             be able to generate such a token.
+                        org.matrix.msc3824.delegated_oidc_compatibility:
+                          type: boolean
+                          default: false
               examples:
                 response:
                   value: {
