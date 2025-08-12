@@ -96,7 +96,7 @@ paths:
         event exists by timing the response. This is because only a report for an
         existing event will require the homeserver to do further processing. To
         combat this, homeservers MAY add a random delay when generating a response.
-      operationId: reportEvent
+      operationId: reportContent
       parameters:
         - in: path
           name: roomId
