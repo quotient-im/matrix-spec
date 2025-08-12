@@ -439,7 +439,22 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/RoomKeysUpdateResponse"
+                type: object
+                title: RoomKeysUpdateResponse
+                properties:
+                  etag:
+                    description: |-
+                      The new etag value representing stored keys in the backup.
+                      See `GET /room_keys/version/{version}` for more details.
+                    type: string
+                    example: abcdefg
+                  count:
+                    description: The number of keys stored in the backup
+                    type: integer
+                    example: 10
+                required:
+                  - etag
+                  - count
         "403":
           description: |-
             The version specified does not match the current backup version.
@@ -557,7 +572,22 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/RoomKeysUpdateResponse"
+                type: object
+                title: RoomKeysUpdateResponse
+                properties:
+                  etag:
+                    description: |-
+                      The new etag value representing stored keys in the backup.
+                      See `GET /room_keys/version/{version}` for more details.
+                    type: string
+                    example: abcdefg
+                  count:
+                    description: The number of keys stored in the backup
+                    type: integer
+                    example: 10
+                required:
+                  - etag
+                  - count
         "404":
           description: The backup was not found.
           content:
@@ -615,7 +645,22 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/RoomKeysUpdateResponse"
+                type: object
+                title: RoomKeysUpdateResponse
+                properties:
+                  etag:
+                    description: |-
+                      The new etag value representing stored keys in the backup.
+                      See `GET /room_keys/version/{version}` for more details.
+                    type: string
+                    example: abcdefg
+                  count:
+                    description: The number of keys stored in the backup
+                    type: integer
+                    example: 10
+                required:
+                  - etag
+                  - count
         "403":
           description: |-
             The version specified does not match the current backup version.
@@ -733,7 +778,22 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/RoomKeysUpdateResponse"
+                type: object
+                title: RoomKeysUpdateResponse
+                properties:
+                  etag:
+                    description: |-
+                      The new etag value representing stored keys in the backup.
+                      See `GET /room_keys/version/{version}` for more details.
+                    type: string
+                    example: abcdefg
+                  count:
+                    description: The number of keys stored in the backup
+                    type: integer
+                    example: 10
+                required:
+                  - etag
+                  - count
         "404":
           description: The backup was not found.
           content:
@@ -806,7 +866,22 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/RoomKeysUpdateResponse"
+                type: object
+                title: RoomKeysUpdateResponse
+                properties:
+                  etag:
+                    description: |-
+                      The new etag value representing stored keys in the backup.
+                      See `GET /room_keys/version/{version}` for more details.
+                    type: string
+                    example: abcdefg
+                  count:
+                    description: The number of keys stored in the backup
+                    type: integer
+                    example: 10
+                required:
+                  - etag
+                  - count
         "403":
           description: |-
             The version specified does not match the current backup version.
@@ -932,7 +1007,22 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/RoomKeysUpdateResponse"
+                type: object
+                title: RoomKeysUpdateResponse
+                properties:
+                  etag:
+                    description: |-
+                      The new etag value representing stored keys in the backup.
+                      See `GET /room_keys/version/{version}` for more details.
+                    type: string
+                    example: abcdefg
+                  count:
+                    description: The number of keys stored in the backup
+                    type: integer
+                    example: 10
+                required:
+                  - etag
+                  - count
         "404":
           description: The backup was not found.
           content:
@@ -966,26 +1056,6 @@ servers:
       basePath:
         default: /_matrix/client/v3
 components:
-  schemas:
-    RoomKeysUpdateResponse:
-      type: object
-      title: RoomKeysUpdateResponse
-      properties:
-        etag:
-          description: |-
-            The new etag value representing stored keys in the backup.
-            
-            See [`GET /room_keys/version/{version}`](client-server-api/#get_matrixclientv3room_keysversionversion)
-            for more details.
-          type: string
-          example: abcdefg
-        count:
-          description: The number of keys stored in the backup
-          type: integer
-          example: 10
-      required:
-        - etag
-        - count
   securitySchemes:
     accessTokenQuery:
       $ref: definitions/security.yaml#/accessTokenQuery
